@@ -14,3 +14,5 @@ lsock.listen()
 print(f"Listening on {(host, port)}")
 lsock.setblocking(False)
 sel.register(lsock, selectors.EVENT_READ, data=None)
+
+print("hi! I'm a simple echo server.")
